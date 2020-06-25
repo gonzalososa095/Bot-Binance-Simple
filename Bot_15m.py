@@ -13,7 +13,7 @@ import Operaciones
 api_key = ''
 api_secret = ''
 clientUser = Client(api_key, api_secret,{"verify": True, "timeout": 20})
-
+x = 2 * 3
 
 
 #Agregar los simbolos con los que se quiera trabajar de forma análoga a:
