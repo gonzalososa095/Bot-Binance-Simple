@@ -4,23 +4,22 @@ Created on Wed Jun 10 12:48:59 2020
 
 @author: Gonzalo Sosa
 """
-#import binance
 from binance.client import Client
 import numpy as np
 import Operaciones
 
 
-
+#Ingresar api generada en binance 
 api_key = ''
 api_secret = ''
 clientUser = Client(api_key, api_secret,{"verify": True, "timeout": 20})
 
 
 
-
+#Agregar los simbolos con los que se quiera trabajar de forma análoga a:
 ################################################################
 Symbol1 = "BTCUSDT"
-CantidadBTC = 0.010023
+CantidadBTC = 0.010023 
 RegistroOrdenesBTC = []
 tradesBTC = clientUser.get_my_trades(symbol='BTCUSDT',limit=2)
 
